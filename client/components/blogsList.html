@@ -1,0 +1,27 @@
+<template name="blogsList">
+{{#contentFor 'headerButtonLeft'}}
+  <button class="button button-clear pull-left button-positive" data-modal="search">
+    {{> ionIcon icon="ios-search"}}
+  </button>
+{{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear pull-right button-positive" data-ion-modal="submitBlog">
+      {{> ionIcon icon='ios-plus-empty'}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Blogs List</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList}}
+        {{#each list}}
+          {{> blogItem blog=this path="blog.item"}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
