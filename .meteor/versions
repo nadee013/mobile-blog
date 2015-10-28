@@ -2,6 +2,7 @@ accounts-base@1.2.1
 accounts-meteor-developer@1.0.6
 accounts-oauth@1.1.7
 aldeed:autoform@4.2.2
+aldeed:collection2@2.3.1
 aldeed:simple-schema@1.1.0
 anti:fake@0.4.1
 autoupdate@1.2.3

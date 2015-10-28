@@ -14,9 +14,11 @@ Template.layout.events({
       buttonClicked: function(index) {
         if (index === 0) {
           console.log('Tweet!');
+          IonPopup.alert({title: 'Share', subTitle: 'Share in Twitter', template: 'Tweeted'});
         }
         if (index === 1) {
           console.log('Email!');
+          IonPopup.alert({title: 'Share', subTitle: 'Share in email', template: "Emailed"});
         }
         return true;
       }

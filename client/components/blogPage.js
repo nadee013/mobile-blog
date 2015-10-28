@@ -21,4 +21,4 @@ Template.blogPage.helpers({
       return Blogs.findOne(id);
     }
   }
-});
+})

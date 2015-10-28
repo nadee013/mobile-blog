@@ -1,5 +1,14 @@
 <template name="submitBlog">
   {{#ionModal customTemplate=true}}
-    {{> quickForm collection="Blogs" id="name" type="insert"}}
+    {{#autoForm collection="Blogs" id="name" type="insert"}}
+    <div class="bar bar-header bar-stable">
+        <button data-dismiss="modal" type="button" class="button button-clear">Cancel</button>
+        <h2 class="title">New Blog</h2>
+        <button type="submit" class="button button-positive button-clear">Post</button>
+      </div>
+      <div class="content has-header overflow-scroll">
+        {{> afQuickField name="name"}}
+      </div>
+      {{/autoForm}}
   {{/ionModal}}
 </template>

@@ -5,5 +5,10 @@
     {{#ionNavView}}
       {{> yield}}
     {{/ionNavView}}
+
+    {{#ionTabs style="ios"}}
+      {{> ionTab title="Blogs List" path="blogsList" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
+      {{> ionTab title="Hot News" path="hotNews" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
+    {{/ionTabs}}
   {{/ionBody}}
 </template>
